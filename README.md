@@ -1,6 +1,6 @@
 # IAMP vs MiP-CRIP (SK Benchmark)
 
-Small benchmark project comparing two solvers on the Sherrington-Kirkpatrick (SK) Ising model:
+Benchmarking two solvers on the Sherrington-Kirkpatrick (SK) Ising model:
 
 - `IAMP` (Incremental Approximate Message Passing) [[1]](#references)
 - `MiP-CRIP` (Minima Preserving Continuous Relaxation)
