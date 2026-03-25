@@ -83,7 +83,7 @@ def run_iamp(J, beta=6.0, delta=0.02, n_restarts=3, pde_cache=None, seed=0):
 
 def main():
     spins = [100, 200, 500, 1000]
-    n_trials = 10
+    n_trials = 100
 
     print("=" * 80)
     print(f"  Benchmarking: SK Model (IAMP vs MiP-CRIP) across {n_trials} trials")
