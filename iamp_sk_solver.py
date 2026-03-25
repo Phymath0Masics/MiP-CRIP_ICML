@@ -3,8 +3,7 @@ iamp_sk_solver.py
 =================
 Full implementation of the Incremental Approximate Message Passing (IAMP)
 algorithm from:
-
-  Montanari, A. (2019). "Optimization of the Sherrington-Kirkpatrick
+  "Optimization of the Sherrington-Kirkpatrick
   Hamiltonian." arXiv:1812.10897v2 (paper suggested by the reviewer iKh6)
 
 Implements Algorithms 1 & 2 (Appendix B) with the Parisi PDE solved via
