@@ -41,7 +41,7 @@ def run_mip_crip(J, seed=0):
         T=10, K=200, 
         alpha=0.000014996, beta=0.001, lambda_=0.0707, 
         # gamma_0 = lsb = 1e-5 satisfies: 3*beta(lambda)^2 < alpha < beta(lambda)^2 + gamma_0
-        step=1.00, beta1=0.9, beta2=0.999, eps=1e-8, 
+        step=1.00, beta1=0.09, beta2=0.999, eps=1e-8, 
         sigma_noise=1e-3
     )
 
