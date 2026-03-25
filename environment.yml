@@ -1,15 +1,9 @@
-name: ising-solvers
+name: iamp-vs-mip-crip
 channels:
   - conda-forge
-  - defaults
-
 dependencies:
-  - python=3.10
+  - python=3.11
   - numpy
   - scipy
   - pandas
   - networkx
-  - pip
-
-  - pip:
-      - tqdm
