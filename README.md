@@ -22,7 +22,7 @@ python benchmark_SK.py
 
 ## Fixed Parameters
 
-The benchmark uses fixed hyperparameters throughout every test case so both methods are compared under a consistent setup.
+The benchmark uses the following fine-tued hyperparameters, which are fixed throughout every test case so both methods are compared under a consistent setup.
 
 - IAMP: `beta=6.0`, `delta=0.02`, `n_restarts=3`.
 - MiP-CRIP: `T=10`, `K=200`, `alpha=0.000014996`($\alpha$), `beta=0.001`($\beta$), `lambda_=0.0707`($\lambda$), `step=1.0`($\tau$), `beta1=0.9`, `beta2=0.999`, `eps=1e-8`, `sigma_noise=1e-3`.
