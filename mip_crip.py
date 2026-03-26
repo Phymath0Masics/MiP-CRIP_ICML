@@ -3,63 +3,7 @@ Ising Solvers - MiP-CRIP implementation
 Minima Preserving Continuous Relaxation for Ising Problems
 """
 
-import networkx as nx
-import pandas as pd
 import numpy as np
-
-
-def data2graph(path):
-    """
-    Convert G-set graph data file to graph and adjacency matrix.
-    
-    Parameters
-    ----------
-    path : str
-        Path to the graph data file
-        
-    Returns
-    -------
-    G : networkx.Graph
-        The graph object
-    adj_matrix : numpy array
-        Adjacency matrix as float32
-    """
-    # Read the data from the text file, skipping the first line
-    data = pd.read_csv(path, delim_whitespace=True, skiprows=1, header=None)
-
-    # Extract nodes and weights
-    nodes = data.iloc[:, 0:2].values.astype(int)
-    weights = data.iloc[:, 2].values
-
-    # Create the graph
-    G = nx.Graph()
-    for i in range(len(nodes)):
-        G.add_edge(nodes[i, 0], nodes[i, 1], weight=weights[i])
-
-    # Compute adjacency matrix
-    adj_matrix = nx.adjacency_matrix(G).todense()
-
-    return G, np.array(adj_matrix).astype(np.float32)
-
-
-def eng2cut(energy, J_sum):
-    """
-    Compute cut value from Ising configuration and coupling matrix.
-    
-    Parameters
-    ----------
-    energy : float
-        Energy of the spin configuration
-    J_sum : float
-        Sum of all elements in the coupling matrix J
-        
-    Returns
-    -------
-    cut_value : float
-        The cut value
-    """
-    cut_value = -(J_sum / 4 + energy / 2)
-    return cut_value
 
 
 def MiP_CRIP(
