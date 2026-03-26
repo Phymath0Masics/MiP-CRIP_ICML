@@ -10,7 +10,7 @@ Benchmarking two solvers on the Sherrington-Kirkpatrick (SK) Ising model:
 - `benchmark_SK.py` : benchmark runner and summary table output
 - `iamp_sk_solver.py` : IAMP implementation
 - `mip_crip.py` : MiP-CRIP implementation
-- `environment.yml` : minimal Conda environment
+- `environment.yml` : Conda environment
 
 ## Quick Start
 
