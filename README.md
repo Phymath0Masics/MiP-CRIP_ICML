@@ -24,7 +24,7 @@ python benchmark_SK.py
 
 The benchmark uses the following fine-tued hyperparameters, which are fixed throughout every test case so both methods are compared under a consistent setup.
 
-- IAMP: `beta=6.0`, `delta=0.02`, `n_restarts=10`.
+- IAMP: `beta=6.0`, `delta=0.02`, `n_restarts=15`.
 - MiP-CRIP: `T=10`, `K=200`, `alpha=0.000014996`($\alpha$), `beta=0.001`($\beta$), `lambda_=0.0707`($\lambda$), `step=1.0`($\tau$), `beta1=0.09` (1st moment for ADAM), `beta2=0.999`(2nd moment for ADAM), `eps=1e-8`, `sigma_noise=1e-3`.
 
 - The elements $J_{ij}$ is the SK model are rounded to 5th decimal places so that $lsb = 10^{-5}$ and we get thebound $\gamma_0 = 10^{-5}$, satisfying $3\beta\lambda^2 < \alpha < \beta\lambda^2 + \gamma_0$ for the MiP-CRIP parameters.
