@@ -56,7 +56,7 @@ def run_mip_crip(J, seed=0):
     sync = sync_ratio(sigma, J)
     return dict(energy=energy, sync=sync, time=elapsed)
 
-def run_iamp(J, beta=6.0, delta=0.02, n_restarts=3, pde_cache=None, seed=0):
+def run_iamp(J, beta=6.0, delta=0.02, n_restarts=10, pde_cache=None, seed=0):
     """Run IAMP (Montanari 2019) with caching for Parisi PDE components."""
     if pde_cache is None:
         pde_cache = {}
