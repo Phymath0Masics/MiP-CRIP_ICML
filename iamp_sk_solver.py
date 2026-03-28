@@ -9,7 +9,7 @@ algorithm from:
 Implements Algorithms 1 & 2 (Appendix B) with the Parisi PDE solved via
 a stable Crank-Nicolson / implicit-diffusion scheme.
 
-SK - Sherrington-Kirkpatrick model (GOE random matrix J, J_ij ~ N(0,1/n) and J_ii ~ N(0,2/n))
+SK - Sherrington-Kirkpatrick model
 """
 
 import numpy as np
