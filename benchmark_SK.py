@@ -36,7 +36,7 @@ def run_mip_crip(J, seed=0):
     rng = np.random.default_rng(seed)
     x0 = rng.standard_normal(n)
 
-    # Best tuned parameters for the SK Model (GOE)
+    # Best tuned parameters for the SK Model
     params = dict(
         T=10, K=200, 
         alpha=0.000014996, beta=0.001, lambda_=0.0707, 
